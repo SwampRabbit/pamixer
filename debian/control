@@ -1,0 +1,26 @@
+Source: pamixer
+Section: Audio
+Priority: optional
+Maintainer: Clément Démoulins <clement@archivel.fr>
+Build-Depends: debhelper-compat (= 13),
+               libpulse-dev,
+               libboost-program-options-dev
+Standards-Version: 4.5.1
+Homepage: https://github.com/cdemoulins/pamixer
+#Vcs-Browser: https://salsa.debian.org/debian/pamixer
+#Vcs-Git: https://salsa.debian.org/debian/pamixer.git
+Rules-Requires-Root: no
+
+Package: pamixer
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Pulseaudio command-line mixer like amixer
+ pamixer is like amixer but for pulseaudio. It can control the volume levels of 
+ the sinks.
+ .
+ Features:
+ - Get the current volume of the default sink, the default source or a selected 
+ one by his id
+ - Set the volume for the default sink, the default source or any other device
+ - List the sinks and sources
+ - Increase / Decrease the volume for a device (using gamma correction option)

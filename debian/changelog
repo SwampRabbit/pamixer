@@ -1,0 +1,6 @@
+pamixer (1.4+git20210529-1) unreleased; urgency=medium
+
+  * Initial packaging of upstream GitHub main.
+  * Create makefile patch to change prefix location.
+
+ -- SwampRabbit <swamprabbit@mxlinux.org>  Fri, 24 Sep 2021 22:45:01 -0400
